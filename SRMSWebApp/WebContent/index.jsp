@@ -85,9 +85,9 @@ function validateForm(form)
 		<table align="center">
 			<tr>
 				<td colspan="2" align="center">
-					<h1>
-						<b>New user Sign Up</b>
-					</h1>
+					<h3>
+						<b>Registration Form</b>
+					</h3>
 				</td>
 			</tr>
 
