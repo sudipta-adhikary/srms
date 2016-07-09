@@ -17,7 +17,7 @@
 	</target>
 
 	<target name="build" depends="clean" description="Compiles the source">
-		<war destfile="${basedir}/build/DevopsTestWebApp.war" webxml="${basedir}/WebContent/WEB-INF/web.xml">
+		<war destfile="${basedir}/build/SRMSWebApp.war" webxml="${basedir}/WebContent/WEB-INF/web.xml">
 			<fileset dir="${basedir}/WebContent">
 				<include name="**/*.*" />
 			</fileset>
