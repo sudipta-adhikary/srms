@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello World!</h2>
+	<h2>Welcome to Simple Registration Management System (SRMS)</h2>
 </body>
 </html>
