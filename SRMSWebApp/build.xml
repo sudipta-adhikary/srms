@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<project name="SRMSWebApp" default="build">
+	<description>
+		simple example build file
+	</description>
+	<!-- Set global properties for this build -->
+	<property name="src" location="src" />
+	<property name="build" location="build" />
+	<property name="dist" location="dist" />
+
+	<!-- Delete the ${build} directory and recreates it -->
+	<target name="clean" description="clean up">
+
+		<delete dir="${basedir}/build" />
+		<mkdir dir="${basedir}/build" />
+	</target>
+
+	<target name="build" depends="clean" description="Compiles the source">
+		<war destfile="${basedir}/build/DevopsTestWebApp.war" webxml="${basedir}/WebContent/WEB-INF/web.xml">
+			<fileset dir="${basedir}/WebContent">
+				<include name="**/*.*" />
+			</fileset>
+		</war>
+	</target>
+
+</project>
