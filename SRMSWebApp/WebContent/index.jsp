@@ -30,13 +30,7 @@ function validateForm(form)
     var pc = form.password1.value;
     var pin=form.pin.value;
     var contactno=form.contactno.value;
-    /* var passw=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8})$/  
-    /*y = y.replace(/^\s+|\s+$/g,"");
-    y = y.replace(/\s{2,}/g," ");
-    p = p.replace(/^\s+|\s+$/g,"");
-    p = p.replace(/\s{2,}/g," ");
-    x = x.replace(/^\s+|\s+$/g,""); // strip all leading and trailing spaces
-    x = x.replace(/\s{2,}/g," "); // replace multiple spaces with one space*/
+    
     if (x.length < 2 && y.length <2) {
        alert("First name and Last name must be filled out");
        return false;
