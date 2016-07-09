@@ -7,10 +7,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Simple Registration Management System (SRMS)</title>
 <style type="text/css">
-form {
-	margin: auto;
-	border: thick solid gray;
-	background-attachment: scroll;
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #555;
+	background-color: #f8f8f8;
+	outline: none;
+}
+
+input[type=text]:focus {
+	background-color: lightblue;
 }
 </style>
 <script type="text/javascript">
@@ -86,7 +94,7 @@ function validateForm(form)
 			<tr>
 				<td colspan="2" align="center">
 					<h3>
-						<b>Registration Form </b>
+						<b style="">Registration Form </b>
 					</h3>
 				</td>
 			</tr>
@@ -109,7 +117,7 @@ function validateForm(form)
 			</tr>
 			<tr>
 				<td>Date of Birth:</td>
-				<td><input type="date" name="dob" /></td>
+				<td><input type="text" name="dob" /></td>
 			</tr>
 			<tr>
 				<td>Contact No.:</td>
@@ -121,55 +129,56 @@ function validateForm(form)
 			</tr>
 
 
-			<!--<tr>
-            <td>Country:</td>
-            <td><select name="country" onClick="getCountries()" class="countries" id="countryId">
-                <option value="">Select Country</option>
-                </select></td>
-        </tr>
-        <tr> -->
-			<td>State:</td>
-			<td><select name="state">
-					<option value="">Select State</option>
-					<option value="Andhra Pradesh">Andhra Pradesh</option>
-					<option value="Arunachal Pradesh">Arunachal Pradesh</option>
-					<option value="Assam">Assam</option>
-					<option value="Bihar">Bihar</option>
-					<option value="Chhattisgarh">Chhattisgarh</option>
-					<option value="Goa">Goa</option>
-					<option value="Gujarat">Gujarat</option>
-					<option value="Haryana">Haryana</option>
-					<option value="Himachal Pradesh">Himachal Pradesh</option>
-					<option value="Jammu and Kashmir">Jammu and Kashmir</option>
-					<option value="Jharkhand">Jharkhand</option>
-					<option value="Karnataka">Karnataka</option>
-					<option value="Kerala">Kerala</option>
-					<option value="Madhya Pradesh">Madhya Pradesh</option>
-					<option value="Maharashtra">Maharashtra</option>
-					<option value="Manipur">Manipur</option>
-					<option value="Meghalaya">Meghalaya</option>
-					<option value="Mizoram">Mizoram</option>
-					<option value="Nagaland">Nagaland</option>
-					<option value="Odisha">Odisha</option>
-					<option value="Punjab">Punjab</option>
-					<option value="Rajasthan">Rajasthan</option>
-					<option value="Sikkim">Sikkim</option>
-					<option value="Tamil Nadu">Tamil Nadu</option>
-					<option value="Telangana">Telangana</option>
-					<option value="Tripura">Tripura</option>
-					<option value="Uttar Pradesh">Uttar Pradesh</option>
-					<option value="Uttarakhand">Uttarakhand</option>
-					<option value="West Bengal">West Bengal</option>
-					<option value="Delhi(UT)">Delhi(UT)</option>
-					<option value="Puducherry(UT)">Puducherry(UT)</option>
-					<option value="32">Andaman and Nicobar Islands(UT)</option>
-					<option value="Andaman and Nicobar Islands(UT)">Chandigarh(UT)
-					</option>
-					<option value="Dadra and Nagar Haveli(UT)">Dadra and Nagar
-						Haveli(UT)</option>
-					<option value="Daman and Diu(UT">Daman and Diu(UT)</option>
-					<option value="Lakshadweep(UT)">Lakshadweep(UT)</option>
-			</select></td>
+			<tr>
+				<td>Country:</td>
+				<td><select name="country" onClick="getCountries()"
+					class="countries" id="countryId">
+						<option value="">Select Country</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><select name="state">
+						<option value="">Select State</option>
+						<option value="Andhra Pradesh">Andhra Pradesh</option>
+						<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+						<option value="Assam">Assam</option>
+						<option value="Bihar">Bihar</option>
+						<option value="Chhattisgarh">Chhattisgarh</option>
+						<option value="Goa">Goa</option>
+						<option value="Gujarat">Gujarat</option>
+						<option value="Haryana">Haryana</option>
+						<option value="Himachal Pradesh">Himachal Pradesh</option>
+						<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+						<option value="Jharkhand">Jharkhand</option>
+						<option value="Karnataka">Karnataka</option>
+						<option value="Kerala">Kerala</option>
+						<option value="Madhya Pradesh">Madhya Pradesh</option>
+						<option value="Maharashtra">Maharashtra</option>
+						<option value="Manipur">Manipur</option>
+						<option value="Meghalaya">Meghalaya</option>
+						<option value="Mizoram">Mizoram</option>
+						<option value="Nagaland">Nagaland</option>
+						<option value="Odisha">Odisha</option>
+						<option value="Punjab">Punjab</option>
+						<option value="Rajasthan">Rajasthan</option>
+						<option value="Sikkim">Sikkim</option>
+						<option value="Tamil Nadu">Tamil Nadu</option>
+						<option value="Telangana">Telangana</option>
+						<option value="Tripura">Tripura</option>
+						<option value="Uttar Pradesh">Uttar Pradesh</option>
+						<option value="Uttarakhand">Uttarakhand</option>
+						<option value="West Bengal">West Bengal</option>
+						<option value="Delhi(UT)">Delhi(UT)</option>
+						<option value="Puducherry(UT)">Puducherry(UT)</option>
+						<option value="32">Andaman and Nicobar Islands(UT)</option>
+						<option value="Andaman and Nicobar Islands(UT)">Chandigarh(UT)
+						</option>
+						<option value="Dadra and Nagar Haveli(UT)">Dadra and
+							Nagar Haveli(UT)</option>
+						<option value="Daman and Diu(UT">Daman and Diu(UT)</option>
+						<option value="Lakshadweep(UT)">Lakshadweep(UT)</option>
+				</select></td>
 			</tr>
 			<tr>
 				<td>City:</td>
@@ -182,7 +191,7 @@ function validateForm(form)
 			</tr>
 			<tr>
 				<td>Email id:</td>
-				<td><input type="email" name="email" required="required"
+				<td><input value="email" name="email" required="required"
 					size="45" /></td>
 			</tr>
 			<tr>
