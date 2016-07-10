@@ -75,8 +75,8 @@ function validateForm(form)
 </head>
 
 <body>
-	<h2>Hey!!! our change has been picked up automatically ....</h2>
-	<!-- <h2>Welcome to Simple Registration Management System (SRMS)</h2> -->
+	<h2>Whoa!!!!! our change has been picked up automatically ....
+		DevOps rocks</h2>
 	<form action="RegistrationAction" name="registrationForm"
 		onsubmit="return validateForm(this)" enctype="multipart/form-data">
 		<table align="center">
