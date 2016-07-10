@@ -7,16 +7,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Simple Registration Management System (SRMS)</title>
 <style type="text/css">
-input[type=text] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border: 1px solid #555;
-	background-color: #5ECE77;
-	outline: none;
-}
-
 input[type=text]:focus {
 	background-color: lightblue;
 }
@@ -81,8 +71,8 @@ function validateForm(form)
 </head>
 
 <body>
-	<!-- <h2>Welcome to Simple Registration Management System (SRMS)</h2> -->
-	<h2>Hey!!! our change has been picked up automatically ....</h2>
+	<h2>Welcome to Simple Registration Management System (SRMS)</h2>
+	<!-- <h2>Hey!!! our change has been picked up automatically ....</h2> -->
 	<form action="RegistrationAction" name="registrationForm"
 		onsubmit="return validateForm(this)" enctype="multipart/form-data">
 		<table align="center">
