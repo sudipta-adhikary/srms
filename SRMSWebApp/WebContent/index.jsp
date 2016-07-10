@@ -8,7 +8,7 @@
 <title>Simple Registration Management System (SRMS)</title>
 <style type="text/css">
 input[type=text] {
-	background-color: #5ECE77;
+	background-color: #2EFE77;
 }
 
 input[type=text]:focus {
